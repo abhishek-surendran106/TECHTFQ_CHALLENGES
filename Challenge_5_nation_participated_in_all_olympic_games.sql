@@ -6,6 +6,7 @@ order by 2 desc
 limit 4;
 
 -- OR
+
 with t1 as
 (select distinct n.region as country, count(distinct a.games) as total_games_participated from athlete_details a
 join noc n on a.noc = n.noc
